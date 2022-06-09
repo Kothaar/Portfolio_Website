@@ -4,22 +4,24 @@ import { SocialIcon } from "react-social-icons";
 
 function NavBar() {
   return (
-    <header className="bg-zinc">
-      <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+    <header className="">
+      <div className=" flex flex-col md:flex-row justify-around md:grow">
+        <nav className="inline-flex">
           <NavLink
             to="/"
             exact
             className={
-              "inline-flex name-text text-3xl py-8 px-3 mr-4 tracking-widest font-bold name-text hover:text-green"
+              "inline-flex name-text underline decoration-2 decoration-solid underline-offset-8 hover:no-underline text-3xl p-3 md:py-8 md:px-3 md:mx-5 tracking-widest font-bold name-text hover:text-green"
             }
           >
             Kelly Burton
           </NavLink>
+        </nav>
+        <nav className="text-xl lg:text-2xl justify-center ">
           <NavLink
             to="/about"
             className={
-              "inline-flex items-center text-2xl p-5 m-3 hover:text-green rounded"
+              "inline-flex p-2 lg:p-5 lg:m-3 hover:text-green rounded hover:underline"
             }
           >
             About
@@ -27,7 +29,7 @@ function NavBar() {
           <NavLink
             to="/projects"
             className={
-              "inline-flex items-center text-2xl p-5 m-3 hover:text-green rounded"
+              "inline-flex p-2 lg:p-5 lg:m-3 hover:text-green rounded hover:underline"
             }
           >
             Projects
@@ -35,7 +37,7 @@ function NavBar() {
           <NavLink
             to="/contact"
             className={
-              "inline-flex  items-center text-2xl p-5 m-3 hover:text-green rounded"
+              "inline-flex p-2 lg:p-5 lg:m-3 hover:text-green rounded hover:underline"
             }
           >
             Contact
@@ -43,13 +45,13 @@ function NavBar() {
           <NavLink
             to="/blog"
             className={
-              "inline-flex items-center text-2xl p-5 m-3 hover:text-green rounded"
+              "inline-flex p-2 lg:p-5 lg:m-3 hover:text-green rounded hover:underline"
             }
           >
             Blog
           </NavLink>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-flex justify-center lg:py-3 lg:px-3 lg:my-6">
           <SocialIcon
             url="https://github.com/kburton501"
             className="mr-4"
