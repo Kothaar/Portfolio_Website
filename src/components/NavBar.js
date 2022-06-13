@@ -5,8 +5,8 @@ import { SocialIcon } from "react-social-icons";
 function NavBar() {
   return (
     <header className="">
-      <div className=" flex flex-col md:flex-row justify-around md:grow">
-        <nav className="inline-flex">
+      <div className=" flex flex-col md:flex-row justify-around md:grow text-white">
+        <nav className="inline-flex ">
           <NavLink
             to="/"
             exact
@@ -43,12 +43,12 @@ function NavBar() {
             Contact
           </NavLink>
           <NavLink
-            to="/blog"
+            to="/test"
             className={
               "inline-flex p-2 lg:p-5 lg:m-3 hover:text-green rounded hover:underline"
             }
           >
-            Blog
+            Test
           </NavLink>
         </nav>
         <div className="inline-flex justify-center lg:py-3 lg:px-3 lg:my-6">
@@ -56,24 +56,24 @@ function NavBar() {
             url="https://github.com/kburton501"
             className="mr-4"
             target="_blank"
-            fgColor="#d99f59"
-            bgColor="#455052"
+            fgColor="white"
+            bgColor="#131313"
             style={{ height: 35, width: 45 }}
           />
           <SocialIcon
             url="https://www.linkedin.com/in/kellyb501/"
             className="mr-4"
             target="_blank"
-            fgColor="#d99f59"
-            bgColor="#455052"
+            fgColor="white"
+            bgColor="#131313"
             style={{ height: 35, width: 45 }}
           />
           <SocialIcon
             url=""
             className="mr-4"
             target="_blank"
-            fgColor="#d99f59"
-            bgColor="#455052"
+            fgColor="white"
+            bgColor="#131313"
             style={{ height: 35, width: 45 }}
           />
         </div>
